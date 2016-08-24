@@ -14,6 +14,12 @@ tools/
 #---------------------------------
 *.ts
 !*.d.ts
+gulpfile.js
+webpack.config.js
+tsconfig.json
+typings.json
+firebase.json
+.nvmrc
 
 #---------------------------------
 # Extensions

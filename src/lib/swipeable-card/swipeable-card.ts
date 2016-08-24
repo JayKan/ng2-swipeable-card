@@ -1,83 +1,4 @@
-import {
-  Component,
-  ViewEncapsulation,
-  ChangeDetectionStrategy,
-  HostListener,
-  Input
-} from '@angular/core';
-
-@Component({
-  selector: 'card',
-  encapsulation: ViewEncapsulation.None,
-  template: require('./card.html'),
-  styles: [
-    require('./card.scss')
-  ]
-})
-
-export class Card {
-  SWIPE_ACTION = { LEFT: 'swipeleft', RIGHT: 'swiperight' };
-  avatars = [
-    {
-      name: 'Helen',
-      image: 'http://semantic-ui.com/images/avatar/large/helen.jpg',
-      visible: true
-    },
-    {
-      name: 'Elliot',
-      image: 'http://semantic-ui.com/images/avatar/large/elliot.jpg',
-      visible: false
-    },
-    {
-      name: 'Joe',
-      image: 'http://semantic-ui.com/images/avatar/large/joe.jpg',
-      visible: false
-    },
-    {
-      name: 'Laura',
-      image: 'http://semantic-ui.com/images/avatar/large/laura.jpg',
-      visible: false
-    },
-    {
-      name: 'chris',
-      image: 'http://semantic-ui.com/images/avatar/large/chris.jpg',
-      visible: false
-    },
-    {
-      name: 'Jenny',
-      image: 'http://semantic-ui.com/images/avatar/large/jenny.jpg',
-      visible: false
-    },
-    {
-      name: 'Matt',
-      image: 'http://semantic-ui.com/images/avatar/large/matt.jpg',
-      visible: false
-    }
-  ];
-
-  swipe(currentIndex: number, action: string = this.SWIPE_ACTION.RIGHT) {
-    console.log(currentIndex);
-    if (currentIndex > this.avatars.length || currentIndex < 0) return;
-
-    let nextIndex = 0;
-
-    // next
-    if (action === this.SWIPE_ACTION.RIGHT) {
-      const isLast = currentIndex === this.avatars.length - 1;
-      nextIndex = isLast ? 0 : currentIndex + 1;
-    }
-
-    // previous
-    if (action === this.SWIPE_ACTION.LEFT) {
-      const isFirst = currentIndex === 0;
-      nextIndex = isFirst ? this.avatars.length - 1 : currentIndex - 1;
-    }
-
-    // toggle avatar visibility
-    this.avatars.forEach((x, i) => x.visible = (i === nextIndex));
-  }
-}
-
+import { Component, ViewEncapsulation, ChangeDetectionStrategy, HostListener, Input } from '@angular/core';
 
 @Component({
   selector: 'swipeable-card',
@@ -86,9 +7,7 @@ export class Card {
   template:`
     <ng-content></ng-content>
   `,
-  styles: [
-    require('./swipable-card.scss')
-  ]
+  styleUrls: ['./swipeable-card.css']
 })
 export class SwipeableCard {
   SWIPE_ACTION = { LEFT: 'swipeleft', RIGHT: 'swiperight' };

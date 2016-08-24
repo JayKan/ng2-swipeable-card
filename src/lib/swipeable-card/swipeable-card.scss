@@ -63,13 +63,13 @@ swipeable-card {
   background: white;
 
   &.visible {
-    display: block;
+    display: block !important;
     :hover {
       cursor: pointer;
     }
   }
   &.hidden {
-    display: none;
+    display: none !important;
   }
 }
 
@@ -241,4 +241,5 @@ swipeable-card-actions [swipeable-button]:first-child,
 swipeable-card-actions [swipeable-raised-button]:first-child {
   margin: 0 rem(0.400);
 }
+
 

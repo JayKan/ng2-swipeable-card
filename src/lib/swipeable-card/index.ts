@@ -1,5 +1,3 @@
-export { Card } from './card';
-
 import {
   SwipeableCard,
   SwipeableCardHeader,

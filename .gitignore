@@ -2,8 +2,9 @@
 # Directories
 #---------------------------------
 **/node_modules/
+npm-debug.log
 public/
-tmp/
+dist/
 typings/
 
 

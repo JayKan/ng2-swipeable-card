@@ -4,6 +4,7 @@ const autoprefixer = require('autoprefixer');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const ForkCheckerPlugin = require('awesome-typescript-loader').ForkCheckerPlugin;
 const path = require('path');
 const webpack = require('webpack');
 const WebpackMd5Hash = require('webpack-md5-hash');
@@ -25,37 +26,64 @@ const PORT            = process.env.PORT || 3000;
 const config = {};
 module.exports = config;
 
+/**
+ * Resolve
+ * Reference: http://webpack.github.io/docs/configuration.html#resolve
+ */
 config.resolve = {
-  extensions: ['', '.ts', '.js'],
-  modulesDirectories: ['node_modules'],
-  root: path.resolve('.')
+  // only discover files that have those extensions
+  extensions: ['', '.ts', '.js', '.json', '.css', '.scss', '.html'],
+  root: path.resolve('.'),
+  modulesDirectories: ['node_modules']
 };
 
 config.module = {
   loaders: [
     {
       test: /\.ts$/,
-      loader: 'ts',
-      exclude: /node_modules/
+      loaders: [
+        'ts-loader',
+        'angular2-template-loader'
+      ],
+      exclude: [
+        /\.(spec|e2e)\.ts$/,
+        /node_modules\/(?!(ng2-.+))/
+      ]
     },
+    { test: /\.json$/, loader: 'json-loader' },
     {
-      test: /\.html$/,
-      loader: 'raw'
+      test: /\.css$/,
+      exclude: root('src', 'lib'),
+      loader: ExtractTextPlugin.extract('style', 'css?sourceMap!postcss')
     },
+    { test: /\.css$/, include: root('src', 'lib'), loader: 'raw!postcss'},
     {
       test: /\.scss$/,
-      loader: 'raw!postcss!sass',
+      loaders: [
+        'raw-loader',
+        'postcss-loader',
+        'sass-loader'
+      ],
       exclude: path.resolve('src/demo-app/views/common/styles'),
       include: [
         path.resolve('src/demo-app/views'),
         path.resolve('src/demo-app/components'),
         path.resolve('src/lib/')
       ]
+    },
+    {
+      test: /\.(html|css)$/,
+      loader: 'raw-loader'
+    },
+    {
+      test: /\.(jpg|png|gif)$/,
+      loader: 'file-loader'
     }
   ]
 };
 
 config.plugins = [
+  new ForkCheckerPlugin(),
   new webpack.DefinePlugin({
     'process.env.NODE_ENV': JSON.stringify(NODE_ENV)
   }),
@@ -190,4 +218,10 @@ if (ENV_TEST) {
       include: [path.resolve('src/demo-app/views/common/styles'), path.resolve('src/demo-app/components')]
     }
   );
+}
+
+// Helper functions
+function root(args) {
+  args = Array.prototype.slice.call(arguments, 0);
+  return path.join.apply(path, [__dirname].concat(args));
 }

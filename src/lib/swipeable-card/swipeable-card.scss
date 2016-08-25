@@ -29,6 +29,13 @@ $md-card-mobile-padding: rem(2.400) rem(1.600) !default;
 $md-card-border-radius: 2px !default;
 $md-card-header-size: rem(4.000) !default;
 
+.swipeable-card-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
 %swipeable_card_title_base {
   display: block;
   margin-bottom: rem(1.600);

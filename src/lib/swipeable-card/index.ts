@@ -3,7 +3,7 @@ import {
   SwipeableCardHeader,
   SwipeableCardTitleGroup,
   SwipeableButton
-} from './card';
+} from './swipeable-card';
 
 export const SWIPEABLE_CARD_DIRECTIVES: any[] = [
   SwipeableCard,

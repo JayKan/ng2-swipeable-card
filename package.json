@@ -1,0 +1,88 @@
+{
+  "name": "ng2-swipeable-card",
+  "version": "1.0.3-6",
+  "description": "Swipeable card component in Angular2",
+  "author": "Jay Kan <leicasper@gmail.com>",
+  "license": "MIT",
+  "keywords": [
+    "Angular2",
+    "Plugin",
+    "Swipeable Card",
+    "Swipeleft",
+    "Swiperight",
+    "HammerJS"
+  ],
+  "engines": {
+    "node": ">=5.11",
+    "npm": ">3.x"
+  },
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "scripts": {
+    "copy": "gulp copy",
+    "clean:public": "del-cli ./public",
+    "clean:dist": "del-cli ./dist",
+    "typings": "typings install",
+    "build:dev": "cross-env NODE_ENV=development webpack-dev-server --progress",
+    "build:prod": "cross-env NODE_ENV=production webpack --display-chunks --progress",
+    "server": "cross-env NODE_ENV=development nodemon -w 'server/**/*.*' ./server/main.js",
+    "production": "npm run clean:public && npm run build:prod && npm run server",
+    "development": "npm run build:dev",
+    "start": "npm run development",
+    "prebuild": "npm run clean:dist",
+    "build": "tsc && npm run copy",
+    "prepublish": "npm run build"
+  },
+  "dependencies": {
+    "hammerjs": "^2.0.8"
+  },
+  "devDependencies": {
+    "@angular/common": "2.0.0-rc.5",
+    "@angular/compiler": "2.0.0-rc.5",
+    "@angular/core": "2.0.0-rc.5",
+    "@angular/forms": "0.3.0",
+    "@angular/http": "2.0.0-rc.5",
+    "@angular/platform-browser": "2.0.0-rc.5",
+    "@angular/platform-browser-dynamic": "2.0.0-rc.5",
+    "@angular/router": "3.0.0-rc.1",
+    "core-js": "~2.4.0",
+    "zone.js": "~0.6.12",
+    "rxjs": "5.0.0-beta.6",
+    "typescript": "^1.8.10",
+    "typings": "^1.3.2",
+
+    "autoprefixer": "~6.3.6",
+    "cross-env": "~2.0.0",
+    "css-loader": "~0.23.1",
+    "to-string-loader": "^1.1.4",
+    "del-cli": "^0.2.0",
+    "karma-sourcemap-loader": "~0.3.7",
+    "karma-webpack": "~1.7.0",
+    "morgan": "~1.7.0",
+    "node-sass": "~3.8.0",
+    "postcss-loader": "~0.9.1",
+    "raw-loader": "~0.5.1",
+    "sass-loader": "~4.0.0",
+    "style-loader": "~0.13.1",
+    "json-loader": "^0.5.4",
+    "ts-loader": "~0.8.2",
+    "file-loader": "^0.9.0",
+    "resolve-url-loader": "^1.6.0",
+    "awesome-typescript-loader": "1.1.1",
+    "angular2-template-loader": "^0.4.0",
+
+    "copy-webpack-plugin": "^3.0.1",
+    "extract-text-webpack-plugin": "~1.0.1",
+    "html-webpack-plugin": "~2.22.0",
+
+    "express": "~4.14.0",
+    "webpack": "~1.13.1",
+    "webpack-dev-server": "~1.14.1",
+    "webpack-md5-hash": "~0.0.5",
+    "winston": "~2.2.0",
+    "nodemon": "~1.9.2",
+
+    "gulp": "^3.9.0",
+    "gulp-sass": "^2.3.0"
+  }
+}

@@ -3,61 +3,12 @@ import { Component, ViewEncapsulation } from '@angular/core';
 @Component({
   selector: 'app',
   encapsulation: ViewEncapsulation.None,
-  template:`  
-    <h4 class="ui header medium center aligned margin-top-20">
-      Swipe Avatars with HammerJS
-      <span class="sub header">(swipe left or right)</span>
-    </h4>
-     
-    <div class="card-container">              
-      <swipeable-card *ngFor="let record of avatars; let idx = index;"
-        [cards]="avatars"        
-        [class.visible]="record.visible"
-        [class.hidden]="!record.visible"
-      >
-        <img swipeable-card-image src="{{ record.image }}">
-        <swipeable-card-content>
-          <swipeable-card-title>
-            {{ record.name }} <small>{{ idx }}</small>
-          </swipeable-card-title>
-          <p>{{ record.content }}</p>
-        </swipeable-card-content>
-          
-        <swipeable-card-actions>
-          <button swipeable-button (click)="like(record)">LIKE</button>
-          <button swipeable-button (click)="share(record)">SHARE</button>
-        </swipeable-card-actions>
-      </swipeable-card>
-    </div>   
-  `,
-  styles: [`
-    swipeable-card {       
-      margin: 15px auto auto auto;
-      width: 290px;               
-    }
-    
-    @media (max-width: 340px) {
-      swipeable-card {
-        margin: 15px 5px;
-        width:  250px;        
-      }
-    }
-    
-    @media (max-width: 280px) {
-      swipeable-card {
-        margin: 15px 5px;
-        width:  220px;          
-      }
-    }
-    
-    .card-container {
-      display: flex;
-      flex-direction: column;
-    }    
-  `]
+  template: require('./app.html'),
+  styles:[
+    require('./app.scss')
+  ]
 })
 export class AppComponent {
-
   avatars = [
     {
       name: 'Helen',

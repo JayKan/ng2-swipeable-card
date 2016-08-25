@@ -10,6 +10,3 @@ import '@angular/http';
 // hammerjs
 import 'hammerjs'
 
-
-
-

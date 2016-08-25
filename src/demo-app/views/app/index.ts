@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
 
 // global shared module
-import { SwipeableCardModule } from '../../components';
+import { SwipeableCardModule } from '../../../lib';
 import { AppComponent } from './app';
 
 @NgModule({

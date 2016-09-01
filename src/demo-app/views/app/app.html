@@ -1,12 +1,12 @@
 <section class="margin">
-  <h4 class="ui header medium center aligned margin-top-20">
+  <h3 class="margin-top-20">
     Swipeable Cards with HammerJS
     <span class="sub header">(swipe left or right)</span>
-  </h4>
+  </h3>
 
   <div class="swipeable-card-container">
-    <swipeable-card *ngFor="let record of avatars; let idx = index;"
-                    [cards]="avatars"
+    <swipeable-card *ngFor="let record of example2; let idx = index;"
+                    [cards]="example2"
                     [class.visible]="record.visible"
                     [class.hidden]="!record.visible"
     >
@@ -25,4 +25,5 @@
       </swipeable-card-actions>
     </swipeable-card>
   </div>
+
 </section>

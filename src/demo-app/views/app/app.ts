@@ -9,7 +9,22 @@ import { Component, ViewEncapsulation } from '@angular/core';
   ]
 })
 export class AppComponent {
-  avatars = [
+
+  example1 = [
+    {
+      subTitle: '[1st] Subtitle',
+      cardTitle: '[1st] Card with title',
+      content: '[1st] Lmet, consectetur adipiscing elit, sed do temporem ipsum iscing elit. Praesent est neque, porta in ligula. Integer id velit sed tellus egestas viverra. Vestibulum magna mi, cursus at elementum ac, porta nec justo. Integer lorem massa, rhoncus quis malesuadaris quis nisi. Morbi in mi nisi. Curabitur at nisl eget nulla sollicitudin dictum. Nulla at est erat. Llaoreet auctor sodales eget, pellentesque ac risus. Nam orci purus, elementum eget turpiur.',
+      visible: true
+    },
+    {
+      subTitle: '[2nd] Subtile',
+      cardTitle: '[2nd] Card with title',
+      content: '[2nd] Vestibulum non massa tincidunt, ullamcorper mi non, gravida arcusque accumsan mauris at magna blandit, et tempus lectus bibendum. Aenean in elit in nisi scelerisque aliquet a ac ante. Etiam quis ante risus. Nunc accumsan eu felis sit amet aliquet. Vestibulum blandit erat vel ornare sodales. Aliquam porttitor suscipit nisi, at condimentum erat pharetra sed.',
+      visible: false
+    }
+  ];
+  example2 = [
     {
       name: 'Helen',
       image: 'http://semantic-ui.com/images/avatar/large/helen.jpg',

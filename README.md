@@ -4,7 +4,7 @@
 [![Dependency Status](https://david-dm.org/JayKan/ng2-swipeable-card/status.svg)](https://david-dm.org/JayKan/g2-swipeable-card#info=dependencies) 
 [![devDependency Status](https://david-dm.org/JayKan/ng2-swipeable-card/dev-status.svg)](https://david-dm.org/JayKan/ng2-swipeable-card#info=devDependencies)
 
-> A small standalone Angular2 plugin that allows your card component to either swipe left or right. 
+> A small standalone Angular2 plugin that allows your card component to either swipe left or right. To view the live demo, please visit <a href="https://ng2-swipeable-card.firebaseapp.com/" target="_blank">https://ng2-swipeable-card.firebaseapp.com/ (You can also try to open from your mobile device  🎉)!
 
 
 ## Installation

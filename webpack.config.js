@@ -90,8 +90,7 @@ config.plugins = [
   }),
   new CopyWebpackPlugin([
     { from: 'src/demo-app/assets', to: 'assets' }
-  ]),
-  new WebpackDashboard()
+  ])
 ];
 
 config.postcss = [
@@ -172,6 +171,10 @@ if (ENV_DEVELOPMENT) {
       version: false
     }
   };
+
+  config.plugins.push(
+    new WebpackDashboard()
+  );  
 }
 
 

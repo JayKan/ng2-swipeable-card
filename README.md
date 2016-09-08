@@ -96,6 +96,7 @@ Lastly, simply add your content between `swipeable-card` tags to consume swipeab
 Once you have those, you should install these globals with `npm install --global`:
 * `webpack` (`npm install --global webpack`)
 * `webpack-dev-server` (`npm install --global webpack-dev-server`)
+* `typings` (`npm install --global typings`)
 
 ### Running Development
 Once you have installed all prerequisites,
@@ -106,7 +107,7 @@ Once you have installed all prerequisites,
 * `npm install` to install all dependencies
 * `npm run typings` to install all related typings
 * `npm start` to run our demo app locally
-
+> If you are having issues setting up your local development, try `rm -rf node_modules && npm cache clean`, and re-run `npm install`. If issues still persist, please file an [issue](https://github.com/JayKan/ng2-swipeable-card/issues). 
 
 ## Credits
 * [Angular2 Material Card Component](https://github.com/angular/material2)  

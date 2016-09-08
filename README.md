@@ -107,6 +107,7 @@ Once you have installed all prerequisites,
 * `npm install` to install all dependencies
 * `npm run typings` to install all related typings
 * `npm start` to run our demo app locally
+
 > If you are having issues setting up your local development, try `rm -rf node_modules && npm cache clean`, and re-run `npm install`. If issues still persist, please file an [issue](https://github.com/JayKan/ng2-swipeable-card/issues). 
 
 ## Credits

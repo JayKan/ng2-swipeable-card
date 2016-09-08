@@ -4,6 +4,7 @@ const autoprefixer = require('autoprefixer');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const WebpackDashboard = require('webpack-dashboard/plugin');
 const ForkCheckerPlugin = require('awesome-typescript-loader').ForkCheckerPlugin;
 const path = require('path');
 const webpack = require('webpack');
@@ -89,7 +90,8 @@ config.plugins = [
   }),
   new CopyWebpackPlugin([
     { from: 'src/demo-app/assets', to: 'assets' }
-  ])
+  ]),
+  new WebpackDashboard()
 ];
 
 config.postcss = [

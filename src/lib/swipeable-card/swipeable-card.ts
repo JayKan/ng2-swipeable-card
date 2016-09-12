@@ -5,12 +5,36 @@ import {
   HostListener,
   EventEmitter,
   Input,
-  Injectable
+  Directive
 } from '@angular/core';
-import { SafeStyle, DomSanitizationService } from '@angular/platform-browser';
+import { SafeStyle, DomSanitizer } from '@angular/platform-browser';
 import 'rxjs/add/operator/map';
 
-@Injectable()
+/**
+ * Content of a swipeable card, needed as it's used as a selector in the API.
+ */
+@Directive({ selector: 'swipeable-card-content' })
+export class SwipeableCardContent {}
+
+/**
+ * Title of a swipeable card, needed as it's used as a selector in the API.
+ */
+@Directive({ selector: 'swipeable-card-title' })
+export class SwipeableCardTitle {}
+
+/**
+ * Sub-title of a swipeable card, needed as it's used as a selector in the API.
+ */
+@Directive({ selector: 'swipeable-card-subtitle' })
+export class SwipeableCardSubtitle {}
+
+/**
+ * Action section of a swipeable card, needed as it's used as a selector in the API.
+ */
+@Directive({ selector: 'swipeable-card-actions' })
+export class SwipeableCardActions {}
+
+
 @Component({
   selector: 'swipeable-card',
   encapsulation: ViewEncapsulation.None,
@@ -221,7 +245,7 @@ export class SwipeableCard {
   @Input()
   cards: any[];
 
-  constructor(private sanitizer: DomSanitizationService) {
+  constructor(private sanitizer: DomSanitizer) {
     this.panMoveStream
       .map((next: any) => {
         const { event } = next;

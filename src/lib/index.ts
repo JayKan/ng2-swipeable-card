@@ -10,8 +10,8 @@ export class HammerConfig extends HammerGestureConfig {
 }
 
 @NgModule({
-  declarations: [ SWIPEABLE_CARD_DIRECTIVES ],
-  exports: [ SWIPEABLE_CARD_DIRECTIVES ],
+  declarations: [SWIPEABLE_CARD_DIRECTIVES],
+  exports: [SWIPEABLE_CARD_DIRECTIVES],
   providers: [
     { provide: HAMMER_GESTURE_CONFIG, useClass: HammerConfig }
   ]

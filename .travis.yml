@@ -1,0 +1,19 @@
+sudo: false
+language: node_js
+cache:
+  directories:
+    - node_modules
+branches:
+  only:
+    - master
+notifications:
+  email: false
+node_js:
+  - 6
+before_install:
+  - npm i -g npm@^3.0.0
+  - npm i -g webpack
+  - npm i -g webpack-dev-server
+  - npm i -g typings
+before_script:
+  - npm prune

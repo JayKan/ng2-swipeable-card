@@ -31,7 +31,7 @@
     "start": "npm run development",
     "prebuild": "npm run clean:dist",
     "build": "tsc && npm run copy",
-    "prepublish": "npm run build"
+    "prepublish": "npm run typings && npm run build"
   },
   "dependencies": {
     "hammerjs": "^2.0.8"

@@ -17,6 +17,3 @@ before_install:
   - npm i -g typings
 before_script:
   - npm prune
-script:
-  - npm run typings
-  - npm run build

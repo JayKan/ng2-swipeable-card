@@ -1,17 +1,16 @@
 # ng2-swipeable-card
 
 [![Build Status][build-status-badge]][build-status]
-[![Dependencies Status][dependencyci-badge]][dependencyci]
-[![version][version-badge]][package]
+[![Dependency Status][dependency-badge]][dependency]
+[![devDependency Status][devDependency-badge]][devDependency]
 [![downloads][downloads-badge]][npm-stat]
-[![MIT License][license-badge]][license]
 
 ![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)
 [![Angular 2 Style Guide][angular2-style-guide-badge]][style-guide]
 [![PRs Welcome][prs-badge]][prs]
+[![version][version-badge]][package]
+[![MIT License][license-badge]][license]
 
-<!--[![Dependency Status][dependency-badge]][dependency]-->
-<!--[![devDependency Status][devDependency-badge]][devDependency]-->
 
 > A small standalone Angular2 plugin that allows your card component to either swipe left or right. To view the live demo, please visit <a href="https://ng2-swipeable-card.firebaseapp.com/" target="_blank">https://ng2-swipeable-card.firebaseapp.com/ (You can also try to open from your mobile device  🎉)!
 
@@ -129,9 +128,9 @@ MIT © [Jay Kan](https://github.com/JayKan)
 [style-guide]: https://github.com/mgechev/angular2-style-guide
 [license-badge]: https://img.shields.io/npm/l/ng2-swipeable-card.svg?style=flat-square
 [license]: https://github.com/JayKan/ng2-swipeable-card/blob/master/LICENSE
-[dependency-badge]: https://david-dm.org/JayKan/ng2-swipeable-card/status.svg
+[dependency-badge]: https://david-dm.org/JayKan/ng2-swipeable-card/status.svg?style=flat-square
 [dependency]: https://david-dm.org/JayKan/ng2-swipeable-card
-[devDependency-badge]: https://david-dm.org/JayKan/ng2-swipeable-card/dev-status.svg
+[devDependency-badge]: https://david-dm.org/JayKan/ng2-swipeable-card/dev-status.svg?style=flat-square
 [devDependency]: https://david-dm.org/JayKan/ng2-swipeable-card?type=dev
 [downloads-badge]: https://img.shields.io/npm/dm/ng2-swipeable-card.svg?style=flat-square
 [npm-stat]: https://npm-stat.com/charts.html?package=ng2-swipeable-card&from=2016-08-22&to=2016-09-14

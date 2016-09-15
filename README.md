@@ -1,14 +1,17 @@
 # ng2-swipeable-card
 
-[![Angular 2 Style Guide][angular2-style-guide-badge]][style-guide]
-[![Dependency Status][dependency-badge]][dependency]
-[![devDependency Status][devDependency-badge]][devDependency]
-[![version][version-badge]][package]
-
-[![downloads][downloads-badge]][npm-stat]
 [![Build Status][build-status-badge]][build-status]
-[![PRs Welcome][prs-badge]][prs]
+[![Dependencies][dependencyci-badge]][dependencyci]
+[![version][version-badge]][package]
+[![downloads][downloads-badge]][npm-stat]
 [![MIT License][license-badge]][license]
+
+![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)
+[![Angular 2 Style Guide][angular2-style-guide-badge]][style-guide]
+[![PRs Welcome][prs-badge]][prs]
+
+<!--[![Dependency Status][dependency-badge]][dependency]-->
+<!--[![devDependency Status][devDependency-badge]][devDependency]-->
 
 > A small standalone Angular2 plugin that allows your card component to either swipe left or right. To view the live demo, please visit <a href="https://ng2-swipeable-card.firebaseapp.com/" target="_blank">https://ng2-swipeable-card.firebaseapp.com/ (You can also try to open from your mobile device  🎉)!
 
@@ -137,6 +140,7 @@ MIT © [Jay Kan](https://github.com/JayKan)
 [prs]: https://github.com/JayKan/ng2-swipeable-card/pulls
 [version-badge]: https://img.shields.io/npm/v/split-guide.svg?style=flat-square
 [package]: https://www.npmjs.com/package/ng2-swipeable-card
-[build-status-badge]: https://travis-ci.org/JayKan/ng2-swipeable-card.svg?branch=master
+[build-status-badge]: https://img.shields.io/travis/JayKan/ng2-swipeable-card.svg?style=flat-square
 [build-status]: https://travis-ci.org/JayKan/ng2-swipeable-card
-
+[dependencyci-badge]: https://dependencyci.com/github/JayKan/ng2-swipeable-card/badge?style=flat-square
+[dependencyci]: https://dependencyci.com/github/JayKan/ng2-swipeable-card

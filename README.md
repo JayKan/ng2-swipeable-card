@@ -1,7 +1,7 @@
 # ng2-swipeable-card
 
 [![Build Status][build-status-badge]][build-status]
-[![Dependencies][dependencyci-badge]][dependencyci]
+[![Dependencies Status][dependencyci-badge]][dependencyci]
 [![version][version-badge]][package]
 [![downloads][downloads-badge]][npm-stat]
 [![MIT License][license-badge]][license]
@@ -125,7 +125,6 @@ Once you have installed all prerequisites,
 ## License
 MIT © [Jay Kan](https://github.com/JayKan)
 
-
 [angular2-style-guide-badge]: https://mgechev.github.io/angular2-style-guide/images/badge.svg
 [style-guide]: https://github.com/mgechev/angular2-style-guide
 [license-badge]: https://img.shields.io/npm/l/ng2-swipeable-card.svg?style=flat-square
@@ -142,5 +141,5 @@ MIT © [Jay Kan](https://github.com/JayKan)
 [package]: https://www.npmjs.com/package/ng2-swipeable-card
 [build-status-badge]: https://img.shields.io/travis/JayKan/ng2-swipeable-card.svg?style=flat-square
 [build-status]: https://travis-ci.org/JayKan/ng2-swipeable-card
-[dependencyci-badge]: https://dependencyci.com/github/JayKan/ng2-swipeable-card/badge?style=flat-square
+[dependencyci-badge]: https://dependencyci.com/github/JayKan/ng2-swipeable-card/badge
 [dependencyci]: https://dependencyci.com/github/JayKan/ng2-swipeable-card

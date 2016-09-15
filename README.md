@@ -3,8 +3,9 @@
 [![Angular 2 Style Guide][angular2-style-guide-badge]][style-guide]
 [![Dependency Status][dependency-badge]][dependency]
 [![devDependency Status][devDependency-badge]][devDependency]
-[![downloads][downloads-badge]][npm-stat]
 [![version][version-badge]][package]
+
+[![downloads][downloads-badge]][npm-stat]
 [![Build Status][build-status-badge]][build-status]
 [![PRs Welcome][prs-badge]][prs]
 [![MIT License][license-badge]][license]

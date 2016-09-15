@@ -1,8 +1,13 @@
 # ng2-swipeable-card
-[![Angular 2 Style Guide](https://mgechev.github.io/angular2-style-guide/images/badge.svg)](https://github.com/mgechev/angular2-style-guide)
-[![MIT license](http://img.shields.io/badge/license-MIT-brightgreen.svg)](http://opensource.org/licenses/MIT)
-[![Dependency Status](https://david-dm.org/JayKan/ng2-swipeable-card/status.svg)](https://david-dm.org/JayKan/ng2-swipeable-card) 
-[![devDependency Status](https://david-dm.org/JayKan/ng2-swipeable-card/dev-status.svg)](https://david-dm.org/JayKan/ng2-swipeable-card?type=dev)
+
+[![Angular 2 Style Guide][angular2-style-guide-badge]][style-guide]
+[![Dependency Status][dependency-badge]][dependency]
+[![devDependency Status][devDependency-badge]][devDependency]
+[![downloads][downloads-badge]][npm-stat]
+[![version][version-badge]][package]
+[![Build Status][build-status-badge]][build-status]
+[![PRs Welcome][prs-badge]][prs]
+[![MIT License][license-badge]][license]
 
 > A small standalone Angular2 plugin that allows your card component to either swipe left or right. To view the live demo, please visit <a href="https://ng2-swipeable-card.firebaseapp.com/" target="_blank">https://ng2-swipeable-card.firebaseapp.com/ (You can also try to open from your mobile device  🎉)!
 
@@ -115,3 +120,22 @@ Once you have installed all prerequisites,
 
 ## License
 MIT © [Jay Kan](https://github.com/JayKan)
+
+
+[angular2-style-guide-badge]: https://mgechev.github.io/angular2-style-guide/images/badge.svg
+[style-guide]: https://github.com/mgechev/angular2-style-guide
+[license-badge]: https://img.shields.io/npm/l/ng2-swipeable-card.svg?style=flat-square
+[license]: https://github.com/JayKan/ng2-swipeable-card/blob/master/LICENSE
+[dependency-badge]: https://david-dm.org/JayKan/ng2-swipeable-card/status.svg
+[dependency]: https://david-dm.org/JayKan/ng2-swipeable-card
+[devDependency-badge]: https://david-dm.org/JayKan/ng2-swipeable-card/dev-status.svg
+[devDependency]: https://david-dm.org/JayKan/ng2-swipeable-card?type=dev
+[downloads-badge]: https://img.shields.io/npm/dm/ng2-swipeable-card.svg?style=flat-square
+[npm-stat]: https://npm-stat.com/charts.html?package=ng2-swipeable-card&from=2016-08-22&to=2016-09-14
+[prs-badge]: https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square
+[prs]: https://github.com/JayKan/ng2-swipeable-card/pulls
+[version-badge]: https://img.shields.io/npm/v/split-guide.svg?style=flat-square
+[package]: https://www.npmjs.com/package/ng2-swipeable-card
+[build-status-badge]: https://travis-ci.org/JayKan/ng2-swipeable-card.svg?branch=master
+[build-status]: https://travis-ci.org/JayKan/ng2-swipeable-card
+
